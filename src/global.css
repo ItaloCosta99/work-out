@@ -9,9 +9,11 @@
 
 html, body {
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-y: hidden;
   font-family: 'Mulish', sans-serif;
+  color: #ffffff;
   font-size: 16px;
+  line-height: 20px;
   scroll-behavior: smooth;
   background-color: #E5E5E5;
 }
