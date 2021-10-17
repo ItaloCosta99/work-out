@@ -3,8 +3,8 @@ import './global.css'
 
 function App() {
   return (
-    <div>
-      <Header />
+    <div className="App">
+        <Header />
     </div>
   );
 }
