@@ -29,12 +29,13 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 24px;
   }
-  .wrapper {
+  .header-container .wrapper {
+    min-height: 150px;
     grid-template: 
     'closeer current-time' 
     'profile profile';
   }
-  .wrapper h1 {
+ .header-container .wrapper h1 {
     font-size: 12px;
   }
   .closeer-icon {
