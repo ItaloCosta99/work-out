@@ -23,6 +23,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  html, body {
+    overflow-y: scroll !important;
+  }
   .header-container {
     width: 100%;
     height: 150px;
@@ -31,11 +34,9 @@
   }
   .header-container .wrapper {
     min-height: 150px;
-    grid-template: 
-    'closeer current-time' 
-    'profile profile';
+    grid-template: 'closeer current-time' 'profile profile';
   }
- .header-container .wrapper h1 {
+  .header-container .wrapper h1 {
     font-size: 12px;
   }
   .closeer-icon {
@@ -44,16 +45,17 @@
   }
   .current-time {
     grid-area: current-time;
+    height: 20px;
     justify-self: end;
   }
   .wrapper .profile-container {
     display: flex;
-    width: 80%;
+    width: 100%;
     height: 0;
     gap: 10px;
-    top: 125px;
+    top: 25px;
     z-index: 10;
-    position: absolute;
+    position: relative;
     align-items: center;
     justify-content: flex-start;
   }
