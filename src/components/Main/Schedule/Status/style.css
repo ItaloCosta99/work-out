@@ -1,0 +1,55 @@
+.status {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+}
+
+.status-red {
+  background-color: #EB5F5F;
+}
+
+.status-green {
+  background-color: #02E2BD;
+}
+
+.status-yellow {
+  background-color: #ECC561;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 125px;
+  background-color: #2C3033;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  font-size: 12px;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #2C3033 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

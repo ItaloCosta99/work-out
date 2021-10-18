@@ -5,6 +5,9 @@
   width: 100%;
 }
 .main-container .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   max-width: 700px;
 }
 #closeerIconDark {
@@ -13,10 +16,18 @@
   right: 0;
   margin: 16px 14px 0 0;
 }
+@media screen and (max-width: 1100px){
+  .main-container .wrapper {
+    max-width: 550px;
+  }
+}
 @media screen and (max-width: 768px){
   .main-container{
     margin-top: 42px;
     max-width: none;
+  }
+  .main-container .wrapper {
+    align-items: center;
   }
   #closeerIconDark {
     display: none;
